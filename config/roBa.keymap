@@ -82,10 +82,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W    &kp E         &kp R         &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S    &kp D         &kp F         &kp G        &kp SEMICOLON       &kp SQT               &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z      &kp X    &kp C         &kp V         &kp B        &kp LSHFT           &kp NON_US_BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &lt 3 CAPSLOCK      &kp BACKSPACE         &lt 2 ENTER                             &lt 6 INTERNATIONAL_4
+&kp Q           &kp W      &kp E    &kp R           &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S      &kp D    &kp F           &kp G        &kp ESC             &kp SQT        &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X      &kp C    &kp V           &kp B        &kp LWIN            &kp BACKSLASH  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LCTRL  &kp TAB  &lt 4 LEFT_ALT  &lt 1 SPACE  &lt 3 CAPSLOCK      &kp BACKSPACE  &lt 2 ENTER                             &lt 6 INTERNATIONAL_4
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -126,10 +126,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)                      &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)
+&kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &trans      &trans  &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &trans
+&kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &trans      &trans  &kp LS(N)  &kp LS(M)  &trans     &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
             >;
         };
 
