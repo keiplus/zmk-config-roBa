@@ -82,7 +82,7 @@
             bindings = <
 &kp Q           &kp W      &kp E    &kp R         &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S      &kp D    &kp F         &kp G        &kp ESC                        &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X      &kp C    &kp V         &kp B        &kp LEFT_WIN                   &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z           &kp X      &kp C    &kp V         &kp B        &lt 6 LEFT_WIN                 &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp LCTRL  &kp TAB  &kp LEFT_ALT  &lt 1 SPACE  &lt_to_layer_0 3 CAPSLOCK      &kp BACKSPACE  &lt 2 ENTER                             &lt 5 INTERNATIONAL_4
             >;
 
@@ -96,6 +96,8 @@
 &trans  &trans    &trans     &trans     &trans  &trans      &trans  &kp PAGE_DOWN  &kp LEFT      &kp DOWN  &kp RIGHT      &kp END
 &trans  &trans    &trans     &trans     &trans  &trans      &trans  &trans                                                &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         NUM {
@@ -105,6 +107,8 @@
 &kp LS(SQT)        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp RIGHT_BRACE    &kp LS(MINUS)           &trans  &kp LS(BACKSLASH)  &kp LS(NUMBER_2)  &kp EQUAL         &kp LS(NUMBER_7)  &trans
 &kp SLASH          &kp KP_NUMBER_0  &kp PERIOD       &trans           &trans             &kp LC(LEFT_SHIFT)      &trans  &trans                                                                   &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         ARROW {
@@ -115,7 +119,7 @@
 &trans     &trans     &trans          &trans        &trans  &trans             &trans  &trans                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         MOUSE {
