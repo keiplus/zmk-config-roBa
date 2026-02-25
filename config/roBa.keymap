@@ -91,7 +91,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans     &kp LA(LEFT)  &kp ESC   &kp LA(RIGHT)  &trans
 &trans  &trans  &trans  &trans  &trans  &to 0       &trans  &kp PG_UP  &mkp MB1      &mkp MB3  &mkp MB2       &kp HOME
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp PG_DN  &trans        &trans    &trans         &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &mo 5
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
