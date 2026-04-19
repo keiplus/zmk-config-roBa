@@ -10,6 +10,13 @@
     quick-tap-ms = <0>;
 };
 
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
+    quick-tap-ms = <0>;
+    require-prior-idle-ms = <125>;
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
