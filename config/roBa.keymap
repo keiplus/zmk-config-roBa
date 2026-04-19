@@ -11,10 +11,9 @@
 };
 
 &lt {
-    flavor = "tap-preferred";
+    flavor = "balanced";
     tapping-term-ms = <180>;
     quick-tap-ms = <0>;
-    require-prior-idle-ms = <125>;
 };
 
 &trackball {
