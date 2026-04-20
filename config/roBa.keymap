@@ -54,6 +54,9 @@
         };
     };
 
+    macros {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -81,10 +84,10 @@
 
         NUM {
             bindings = <
-&kp LS(SEMICOLON)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(N8)                                           &kp LS(NUMBER_9)   &kp LS(NUMBER_1)  &kp LS(NUMBER_6)  &kp LEFT_BRACKET  &kp LS(NUMBER_4)
-&kp MINUS          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_BRACKET  &trans             &kp SEMICOLON  &kp BACKSLASH      &kp LS(NUMBER_5)  &kp LS(EQUAL)     &kp LS(NUMBER_3)  &kp DOUBLE_QUOTES
-&kp LS(SQT)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE    &kp LS(MINUS)      &kp SQT        &kp LS(BACKSLASH)  &kp LS(NUMBER_2)  &kp EQUAL         &kp LS(NUMBER_7)  &trans
-&kp SLASH          &kp NUMBER_0  &double_zero  &kp PERIOD    &trans             &trans             &trans         &trans                                                                   &kp LC(LEFT_SHIFT)
+&kp LS(SEMICOLON)  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(N8)                                    &kp LS(NUMBER_9)   &kp LS(NUMBER_1)  &kp LS(NUMBER_6)  &kp LEFT_BRACKET  &kp LS(NUMBER_4)
+&kp MINUS          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_BRACKET  &trans      &kp SEMICOLON  &kp BACKSLASH      &kp LS(NUMBER_5)  &kp LS(EQUAL)     &kp LS(NUMBER_3)  &kp DOUBLE_QUOTES
+&kp LS(SQT)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE    &trans      &kp SQT        &kp LS(BACKSLASH)  &kp LS(NUMBER_2)  &kp EQUAL         &kp LS(NUMBER_7)  &trans
+&kp SLASH          &kp NUMBER_0  &double_zero  &kp PERIOD    &kp LS(MINUS)      &trans      &trans         &trans                                                                   &kp LC(LEFT_SHIFT)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
